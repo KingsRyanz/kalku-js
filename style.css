@@ -1,0 +1,315 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    background-image: url('data:image/svg+xml,%3Csvg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z" fill="%23ffd700" fill-opacity="0.08" fill-rule="evenodd"/%3E%3C/svg%3E');
+    color: #fff;
+}
+
+body.dark {
+    background-color: #000000;
+    background-image: url('data:image/svg+xml,%3Csvg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z" fill="%23110e0e" fill-opacity="0.08" fill-rule="evenodd"/%3E%3C/svg%3E');
+}
+
+/* Toggle Button */
+.toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2.4rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.toggle-button:hover {
+    transform: rotate(20deg);
+}
+
+/* Calculator Container */
+.calculator {
+    width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 32px rgba(255, 183, 0, 0.3);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    animation: float 6s ease-in-out infinite, glow 4s infinite;
+}
+
+/* Display Styling */
+.display {
+    font-size: 2rem;
+    color: #333;
+    background-color: #fff8e7;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: inset 0 3px 8px rgba(255, 183, 0, 0.2);
+}
+
+/* Button Container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+/* Button Styling */
+.button, .buttonspecial, .button.operation, .button.number {
+    padding: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Number Buttons */
+.button.number {
+    background-color: #fff8e7;
+    color: #333;
+    border: 1px solid rgba(255, 183, 0, 0.2);
+}
+
+.button.number:hover {
+    background-color: #ffe4b5;
+    transform: scale(1.05);
+}
+
+/* Operation Buttons */
+.button.operation {
+    background-color: #ffd700;
+    color: #333;
+    text-shadow: 0 0 8px rgba(255, 183, 0, 0.5);
+}
+
+.button.operation:hover {
+    background-color: #ffdb4d;
+    transform: scale(1.05);
+}
+
+/* Special Buttons (like AC, +/-) */
+.buttonspecial, .button.special1 {
+    background-color: #ffb700;
+    color: #333;
+}
+.buttonspecial, .button.special {
+    background-color: #3d405b;
+    color: #e0e0e0;
+}
+
+.buttonspecial:hover, .button.special:hover {
+    background-color: #ffc533;
+    transform: scale(1.05);
+}
+
+/* Zero Button Styling */
+/* .zero {
+    grid-column: span 2;
+} */
+
+/* Dark Mode Toggle */
+body.dark .calculator {
+    background-color: #1a0f0f;
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.2);
+    border: 1px solid #2a0f0f;
+}
+
+body.dark .display {
+    background-color: #000000;
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000;
+    box-shadow: inset 0 3px 8px rgba(255, 0, 0, 0.3);
+}
+
+body.dark .button.number {
+    background-color: #2a0f0f;
+    color: #ff6666;
+    border: 1px solid #3a1f1f;
+    text-shadow: 0 0 5px #ff0000;
+}
+
+body.dark .button.number:hover {
+    background-color: #3a1f1f;
+    transform: scale(1.05);
+}
+
+body.dark .button.operation {
+    background-color: #8b0000;
+    color: #ffffff;
+    text-shadow: 0 0 8px #ff0000;
+}
+
+body.dark .button.operation:hover {
+    background-color: #a00000;
+    transform: scale(1.05);
+}
+
+body.dark .buttonspecial,
+body.dark .button.special {
+    background-color: #400000;
+    color: #ff9999;
+    text-shadow: 0 0 8px #ff0000;
+}
+
+body.dark .buttonspecial:hover,
+body.dark .button.special:hover {
+    background-color: #600000;
+    transform: scale(1.05);
+}
+
+/* Tambahan animasi untuk efek horror */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+body.dark .calculator {
+    animation: pulse 4s infinite;
+}
+
+/* Light Mode Animation */
+@keyframes sunray {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.calculator::before {
+    content: '';
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, transparent 30%, rgba(255, 215, 0, 0.1) 70%);
+    animation: sunray 60s linear infinite;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Light Mode Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.calculator {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Light Mode Glow Effect */
+@keyframes glow {
+    0% { box-shadow: 0 8px 32px rgba(255, 183, 0, 0.3); }
+    50% { box-shadow: 0 8px 32px rgba(255, 183, 0, 0.6); }
+    100% { box-shadow: 0 8px 32px rgba(255, 183, 0, 0.3); }
+}
+
+.calculator {
+    animation: float 6s ease-in-out infinite, glow 4s infinite;
+}
+
+/* Button Hover Animation */
+.button:hover, .buttonspecial:hover {
+    animation: pulse 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Background Icons Animation */
+.background-icons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.icon {
+    position: absolute;
+    opacity: 0.1;
+    animation: floatIcon 6s infinite linear;
+}
+
+/* Light Mode Icons */
+body .icon::before {
+    content: '✨';
+    font-size: 24px;
+    color: #ffd700;
+}
+
+body .icon:nth-child(2n)::before {
+    content: '⭐';
+}
+
+body .icon:nth-child(3n)::before {
+    content: '🌟';
+}
+
+/* Dark Mode Icons */
+body.dark .icon::before {
+    content: '👻';
+    color: #ff0000;
+}
+
+body.dark .icon:nth-child(2n)::before {
+    content: '💀';
+}
+
+body.dark .icon:nth-child(3n)::before {
+    content: '🦇';
+}
+
+/* Icon Animation */
+@keyframes floatIcon {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        transform: translate(var(--move-x), var(--move-y)) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Generate multiple icons with different positions and animations */
+.icon:nth-child(1) { --move-x: 100px; --move-y: -100px; left: 10%; top: 20%; animation-delay: 0s; }
+.icon:nth-child(2) { --move-x: -150px; --move-y: -120px; left: 30%; top: 40%; animation-delay: 1s; }
+.icon:nth-child(3) { --move-x: 120px; --move-y: 150px; left: 50%; top: 60%; animation-delay: 2s; }
+.icon:nth-child(4) { --move-x: -100px; --move-y: 120px; left: 70%; top: 20%; animation-delay: 3s; }
+.icon:nth-child(5) { --move-x: 150px; --move-y: -150px; left: 80%; top: 50%; animation-delay: 4s; }
+.icon:nth-child(6) { --move-x: -120px; --move-y: -100px; left: 20%; top: 80%; animation-delay: 5s; }
